@@ -13,6 +13,7 @@ function getComp(){
 const tombol = document.getElementsByTagName('button')[0];
 tombol.addEventListener('click', ()=>{
   const pilihan = getComp();
+  let lagi = true;
   setTimeout(()=>{
     const gambar = document.querySelector('.img-comp');
     gambar.setAttribute('src', 'img/'+ pilihan + '.jpg' )
@@ -23,7 +24,11 @@ tombol.addEventListener('click', ()=>{
     if(pilihan == 'PICO') 
     return  selamat.innerHTML = `YAHAHAHAHA PILIHAN KOK ${pilihan}😂`;
   },1000)
-  putar()  
+  putar()
+  setTimeout(()=>{
+    let lagi = confirm("mau mencoba lagi?");
+    if(lagi !== true){location.reload()};
+  },1200)  
 });
 
 // function putar
