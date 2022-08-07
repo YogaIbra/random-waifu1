@@ -13,7 +13,6 @@ function getComp(){
 const tombol = document.getElementsByTagName('button')[0];
 tombol.addEventListener('click', ()=>{
   const pilihan = getComp();
-  let lagi = true;
   setTimeout(()=>{
     const gambar = document.querySelector('.img-comp');
     gambar.setAttribute('src', 'img/'+ pilihan + '.jpg' )
