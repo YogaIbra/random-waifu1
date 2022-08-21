@@ -24,10 +24,11 @@ tombol.addEventListener('click', ()=>{
     return  selamat.innerHTML = `YAHAHAHAHA PILIHAN KOK ${pilihan}😂`;
   },1000)
   putar()
-  setTimeout(()=>{
-    let lagi = confirm("mau mencoba lagi?");
-    if(lagi !== true){location.reload()};
-  },1200)  
+   setTimeout(()=>{
+     let lagi = tombol.innerHTML = "AGAIN?";  
+     if(lagi == true){location.reload()};
+   },1200)  
+   tombol.innerHTML = "GACHA!"
 });
 
 // function putar
